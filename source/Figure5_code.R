@@ -1,0 +1,10 @@
+myx<-c(0.25, 1.08, 1.75, 2.5)
+plotCI(myx,mat1[,1], ui=mat3[,1],li=mat2[,1], xlim=c(0,2.8), pch=19, col="deeppink3", lwd=1.35, ylim=c(0,0.7), axes=F, 
+       gap=0, ylab="HIV prevalence", xlab="Months since arrival", cex=1.5)
+plotCI(myx+0.15,mat1[,2], ui=mat3[,2],li=mat2[,2], xlim=c(0,3), pch=15, col="deepskyblue3",add=T, lwd=1.35, ylim=c(0,1), gap=0, cex=1.5)
+axis(1,c(0,0.35,1.09, 1.82, 2.6, 2.8), labels=c("", "0-5", "6-11", "12-24", "24+", ""))
+axis(2, seq(0,1,.1))
+abline(h=seq(0.05,1, 0.05), lty=2, col="gray80")
+legend("topleft", legend=c("Women", "Men"), pch=c(19,15), col=c("deeppink3", "deepskyblue3"), bty="n", pt.cex=1.5)
+box()
+dev.copy2pdf(file = "Fig4D_TimeSinceArrivalVsHIVprev_ByGender_LinePlot.pdf", useDingbats=FALSE)
