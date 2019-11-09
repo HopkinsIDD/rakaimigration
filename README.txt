@@ -1,7 +1,7 @@
 ---
 title: "Migration, hotspots, and dispersal of HIV infection in Rakai Uganda"
 author: "M. Kate Grabowski"
-date: "November 7, 2019"
+date: "November 8, 2019"
 output: html_document
 ---
 
